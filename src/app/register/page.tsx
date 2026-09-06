@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Register(){return <main className="wrap"><form className="form" action="/api/auth/register" method="post"><h1>Crea account BUYGO</h1><label>Nome</label><input name="name"/><label>Email</label><input name="email" type="email" required/><label>Password</label><input name="password" type="password" minLength={10} required/><p className="muted">Minimo 10 caratteri.</p><p><button className="btn" type="submit">Registrati</button></p><p className="muted">Hai già un account? <Link href="/login">Accedi</Link></p></form></main>}
