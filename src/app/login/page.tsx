@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Login(){return <main className="wrap"><form className="form" action="/api/auth/login" method="post"><h1>Accedi a BUYGO</h1><label>Email</label><input name="email" type="email" required/><label>Password</label><input name="password" type="password" required/><p><button className="btn" type="submit">Accedi</button></p><p className="muted">Non hai un account? <Link href="/register">Registrati</Link></p></form></main>}
